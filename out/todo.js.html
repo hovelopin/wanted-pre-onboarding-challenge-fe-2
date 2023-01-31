@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: multiply.js</title>
+    <title>JSDoc: Source: todo.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: multiply.js</h1>
+    <h1 class="page-title">Source: todo.js</h1>
 
     
 
@@ -27,13 +27,52 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * @function multiply
- * @param {number} a 연산하고자 하는 0 이상의 정수
- * @param {number} b 연산하고자 하는 0 이상의 정수
- * @returns {number} a * b
+ * @typedef {Object} Todo
+ * @property {number} id - 0이상의 Todo ID 값
+ * @property {string} content - Todo 내용
+ * @property {Boolean} isDone - Todo 이행 여부
+ * @property {string} category - Todo 카테고리
+ * @property {string[]} tags - Todo 태그들
  */
 
-const multiply = (a, b) => a * b;
+/**
+ * @description 할 일을 추가할 수 있는데 내용없이 추가할 수 없다.
+ * @function createTodo
+ * @param {number} id - 0이상의 Todo ID 값
+ * @param {string} content - Todo 내용
+ * @param {boolean} isDone - Todo 이행 여부
+ * @param {string} category - Todo 카테고리
+ * @param {string[]} tags - Todo 태그들
+ * @returns {Todo}
+ */
+const createTodo = (id, content, isDone, category, tags) => {};
+
+/**
+ * @description ID를 기반으로 특정 할일을 조회할 수 있다.
+ * @function getTodoById
+ * @param {number} id - 0이상의 Todo ID 값
+ * @returns {Todo} - 특정  Todo를 가져오거나 전체 Todo 배열을 가져온다.
+ */
+
+const getTodoById = (id) => {};
+
+/**
+ * @description 모든 할 일을 조회할 수 있다.
+ * @function getTodos
+ * @returns {Todo[]}
+ */
+const getTodos = () => {};
+
+/**
+ * @description ID를 제외한 모든 속성을 수정할 수 있고 특정 할 일의 태그를 수정할 수 있다.
+ * @function updateTodo
+ */
+const updateTodo = () => {};
+
+/**
+ * @description -
+ */
+const deleteTodo = () => {};
 </code></pre>
         </article>
     </section>
